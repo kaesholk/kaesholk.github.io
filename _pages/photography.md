@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: photography
+permalink: /photography/
+description: A growing collection of my cool photography.
 nav: true
 display_categories: [work, fun]
 horizontal: false
