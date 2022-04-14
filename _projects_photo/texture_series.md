@@ -3,7 +3,7 @@ layout: page
 title: texture series
 description: a series from digital photography class
 img: assets/img/texture_series/colorful_ash.jpeg
-importance: 2
+importance: 3
 category: 2021
 ---
 
