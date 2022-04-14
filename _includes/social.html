@@ -58,3 +58,6 @@
             {%- if site.spotify_id -%}
             <a href="https://open.spotify.com/artist/{{ site.spotify_id }}" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
             {% endif %}
+            {%- if site.bandcamp_username -%}
+            <a href="https://{{ site.bandcamp_username }}.bandcamp.com" title="Bandcamp"><i class="fa-brands fa-bandcamp"></i></a>
+            {% endif %}

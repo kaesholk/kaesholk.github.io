@@ -71,6 +71,7 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 spotify_id: 7zF6qUrQMgosNNT756Q2NH
+bandcamp_username: hyprlynk
 
 contact_note: >
   
@@ -106,9 +107,12 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
+  projects_photo:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects_photo/:path/
+  #projects_music:
+  #  output: true
+  #  permalink: /projects_music/:path/
 
 news_limit: 5
 
