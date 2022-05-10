@@ -2,7 +2,7 @@
 layout: page
 title: audacious corruptions
 description: corrupting image files using audio editing
-img: /assets/img/corruptions/
+img: /assets/img/corruptions2/nib_echo.tif
 importance: 3
 category: 2022
 ---
