@@ -2,23 +2,23 @@
 layout: page
 title: audacious corruptions
 description: corrupting image files using audio editing
-img: 
+img: /assets/img/corruptions/
 importance: 3
 category: 2022
 ---
 
-Every project has a beautiful feature showcase page. AGSDFASDF
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Ever since I discovered you could import raw data into the audio editing program Audacity, I wondered if you could run a file through audio effects and re-export it as a viewable image file. After some googling, I landed on this process:
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+1. convert your image to .tif
+2. open Audacity and go to file -> import -> raw data
+3. select the image and set encoding to "U-Law" and byte order to little-endian
+4. apply effects to the audio newly created track 
+   (do not change the beginning/end of the audio or change the overall length because the file will be unopenable)
+5. go to export -> export audio
+6. save as type "other uncompressed files"
+7. set header to "RAW (header-less)" and encoding to "U-Law"
+6. save as a new, artistically corrupted .tif file
+    
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

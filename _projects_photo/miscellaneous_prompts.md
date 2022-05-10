@@ -2,7 +2,7 @@
 layout: page
 title: miscellaneous prompts
 description: later work from digital photography class
-img: assets/img/grid.jpg
+img: assets/img/misc_prompts/bokeh/grid.jpg
 importance: 1
 category: 2020
 ---
