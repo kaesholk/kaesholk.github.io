@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: bust.png
+  image: kaes-camera-cropped.png
   address: >
     
 
