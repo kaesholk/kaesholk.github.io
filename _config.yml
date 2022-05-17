@@ -101,8 +101,6 @@ disqus_shortname:  # put your disqus shortname
 # If you have blog posts published on medium.com or other exteranl sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -260,6 +258,7 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
+    - ".tif"
   output_formats:
     webp: "-quality 75%"
 
