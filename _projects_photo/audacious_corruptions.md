@@ -2,7 +2,7 @@
 layout: page
 title: audacious corruptions
 description: corrupting image files using audio editing
-img: /assets/img/corruptions2/nib_echo.tif
+img: /assets/img/corruptions2/nib_echo.jpg
 importance: 3
 category: 2022
 ---
@@ -22,7 +22,7 @@ Ever since I discovered you could import raw data into the audio editing program
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions/columns.tif" title="uncorrupted image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns.jpg" title="uncorrupted image" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid z-depth-1" %}
