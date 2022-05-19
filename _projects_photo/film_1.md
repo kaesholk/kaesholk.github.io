@@ -1,9 +1,9 @@
 ---
 layout: page
-title: film photo semester 1
-description: various images from film photography class
-img: 
-importance: 2
+title: film 1
+description: work from film photo semester 1
+img: assets/img/film/darkroom.jpg
+importance: 1
 category: 2021
 ---
 

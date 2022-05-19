@@ -37,13 +37,17 @@ Ever since I discovered you could import raw data into the audio editing program
 <div class="caption">
     From left to right: the original image, the same image with an echo effect, the image pitch shifted up by a very tiny amount, and the image with an EQ applied.
 </div>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_wah_reallyslow.jpg" title="image with wah-wah effect" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions/columnsreverse.jpg" title="image with reverse effect" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Left: the image with a wah-wah effect. Right: the image with the middle section reversed. Interestingly, reversing the audio inverts the colors while also flipping the image.
 </div>
 
 You can also put regular text between your rows of images.
