@@ -79,7 +79,7 @@ After messing around with various effects on this test image, I tried corrupting
         {% include figure.html path="assets/img/corruptions2/door_echo.jpg" title="image of door with echo effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/staircase_echo.jpg" title="image of staircase with echo effect" class="  z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/staircase_echo.jpg" title="image of staircase with echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 
