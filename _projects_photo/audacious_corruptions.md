@@ -25,17 +25,17 @@ Ever since I discovered you could import raw data into the audio editing program
         {% include figure.html path="assets/img/corruptions/columns.jpg" title="uncorrupted image" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columnsecho.jpg" title="image with echo effect" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_micro_shift2.jpg" title="pitch shifted image" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_eq_4.jpg" title="image with eq" class="img-fluid z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    From left to right: the original image, the same image with an echo effect, the image pitch shifted up by a very tiny amount, and the image with an EQ applied.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
