@@ -25,7 +25,7 @@ Ever since I discovered you could import raw data into the audio editing program
         {% include figure.html path="assets/img/corruptions/columns.jpg" title="uncorrupted image" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions/columnsreverse.jpg" title="image with echo effect" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columnsreverse.jpg" title="image with reverse effect" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/corruptions/columns_micro_shift2.jpg" title="pitch shifted image" class="img-fluid z-depth-1" %}
@@ -40,10 +40,10 @@ Ever since I discovered you could import raw data into the audio editing program
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions/columns_wah_reallyslow.jpg" title="image with wah-wah effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_wah_reallyslow.jpg" title="image with wah-wah effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions/columnsecho.jpg" title="image with reverse effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columnsecho.jpg" title="image with echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -55,7 +55,7 @@ After messing around with various effects on this test image, I tried corrupting
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-3 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/windows_echo_screenshot.png" title="image of the side of a building with an echo effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/windows_echo_screenshot.png" title="image of the side of a building with an echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -64,10 +64,10 @@ After messing around with various effects on this test image, I tried corrupting
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/nib_echo.jpg" title="image of a large building with an echo effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/nib_echo.jpg" title="image of a large building with an echo effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/grate_echo.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/grate_echo.jpg" title="image of a hexagonal grate with echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -76,34 +76,34 @@ After messing around with various effects on this test image, I tried corrupting
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/door_echo.jpg" title="image of door with echo effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/door_echo.jpg" title="image of door with echo effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/staircase_echo.jpg" title="image of staircase with echo effect" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/staircase_rev.jpg" title="image of staircase with reverse effect" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/hallway_echo.jpg" title="image of dark hallway with echo effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/staircase_echo.jpg" title="image of staircase with echo effect" class="  z-depth-1" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/sign_echo.jpg" title="image of sign with echo effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/staircase_rev.jpg" title="image of staircase with reverse effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/sign_echo2.jpg" title="another image of a sign with echo effect" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/hallway_echo.jpg" title="image of dark hallway with echo effect" class="img-fluid  z-depth-1" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/sign_echo.jpg" title="image of sign with echo effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/sign_pitch.jpg" title="image of sign with pitch shift" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/sign_echo2.jpg" title="another image of a sign with echo effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/corruptions2/sign_pitch2.jpg" title="image of sign with pitch shift" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/sign_pitch.jpg" title="image of sign with pitch shift" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/sign_pitch2.jpg" title="image of sign with pitch shift" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 <div class="caption">
