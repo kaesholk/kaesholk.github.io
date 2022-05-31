@@ -71,5 +71,11 @@ Eventually I started experimenting with double exposures. I layered two pieces o
     </div>
 </div>
 <div class="caption">
-    Left to right, top to bottom: Flowers in a window-frame, a plant silhouette on some rocks, tomatoes combined with some grass or something, and a glass with flowers in the backround.
+    Left to right, top to bottom: Flowers in a window-frame, a plant silhouette on some rocks, tomatoes combined with some grass or something, and a glass with flowers in the backround. Below: Tree branches overlayed with some tree bark.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/film/eerie.jpg" title="tree branches" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
