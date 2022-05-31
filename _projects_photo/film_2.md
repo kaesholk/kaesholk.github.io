@@ -1,8 +1,8 @@
 ---
 layout: page
-title: double exposures 2
-description: experiments in double exposures (semester 2)
-img: 
+title: film 2
+description: work from film photo semester 2
+img: assets/img/film/suspension_1.jpg
 importance: 1
 category: 2022
 ---

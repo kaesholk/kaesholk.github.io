@@ -1,8 +1,8 @@
 ---
 layout: page
-title: double exposures 1
-description: experiments in double exposures (semester 1)
-img: 
+title: film 1
+description: work from film photo semester 1
+img: assets/img/film/darkroom.jpg
 importance: 1
 category: 2021
 ---

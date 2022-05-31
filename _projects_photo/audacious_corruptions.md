@@ -25,59 +25,87 @@ Ever since I discovered you could import raw data into the audio editing program
         {% include figure.html path="assets/img/corruptions/columns.jpg" title="uncorrupted image" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columnsreverse.jpg" title="image with reverse effect" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_micro_shift2.jpg" title="pitch shifted image" class="img-fluid z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_eq_4.jpg" title="image with eq" class="img-fluid z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    From left to right: the original image, the same image with an echo effect, the image pitch shifted up by a very tiny amount, and the image with an EQ applied.
 </div>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions/columns_wah_reallyslow.jpg" title="image with wah-wah effect" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions/columnsecho.jpg" title="image with echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Left: the image with a wah-wah effect. Right: the image with the middle section reversed. Interestingly, reversing the audio inverts the colors while also flipping the image.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
 
+After messing around with various effects on this test image, I tried corrupting some of my own photos.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-3 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/windows_echo_screenshot.png" title="image of the side of a building with an echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    This photo looked fine in Microsoft Photos, but it turned almost completely red when I added it to the website, so I took a screenshot to duplicate it. Sometimes the corruption process can cause weird inexplicable things like that to happen.
 </div>
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/nib_echo.jpg" title="image of a large building with an echo effect" class="img-fluid  z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/corruptions2/grate_echo.jpg" title="image of a hexagonal grate with echo effect" class="img-fluid  z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    Changing the parameters of the echo effect can change the craziness of the image.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/door_echo.jpg" title="image of door with echo effect" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/staircase_echo.jpg" title="image of staircase with echo effect" class="img-fluid  z-depth-1" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/staircase_rev.jpg" title="image of staircase with reverse effect" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/hallway_echo.jpg" title="image of dark hallway with echo effect" class="img-fluid  z-depth-1" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/sign_echo.jpg" title="image of sign with echo effect" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/sign_echo2.jpg" title="another image of a sign with echo effect" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/sign_pitch.jpg" title="image of sign with pitch shift" class="img-fluid  z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/corruptions2/sign_pitch2.jpg" title="image of sign with pitch shift" class="img-fluid  z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Sometimes, you can get different output images even with the exact settings. Some images also look different depending on what photo viewer you're using. I have no idea why these phenomena occur.
+</div>
