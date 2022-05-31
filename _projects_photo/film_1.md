@@ -7,74 +7,69 @@ importance: 1
 category: 2021
 ---
 
-Every project has a beautiful feature showcase page. AGSDFASDF
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+In semester one of this class, I learned the process of capturing on film, developing film and printing photos. Later, I started experimenting with this process.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/film/pinhole.jpg" title="pinhole photography" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    I made a pinhole camera out of a small cardboard box and captured these two negatives which I then made positives from.
+</div>
+
+Next I started capturing with my film camera, a Minolta X-700.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/film/flowers.jpg" title="photo of flowers" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/film/orbs.jpg" title="photo of orbs" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/film/plant_shadow.jpg" title="silhouette of a plant" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/film/darkroom.jpg" title="photo of darkroom" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Left to right, top to bottom: Some flowers, some tomatoes, a plant, and a long exposure photo taken from within the darkroom.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/film/abstract_glass.jpg" title="glass of water" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/film/light_glass.jpg" title="glass of water with light shining through it" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: A glass of water in front of a mesh chair with light shining through it. Right: Just a glass of water with light shining through it.
 </div>
 
+Eventually I started experimenting with double exposures. I layered two pieces of film in the enlarger which combined them into one image when printing. While capturing, I focused on finding things that would work well for double exposures, such as a more textural background layer and a higher contrast layer to use as a sort of mask.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/film/flower_window.jpg" title="photo of flowers" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/film/plant_rocks.jpg" title="photo of orbs" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/film/ethereal_orbs.jpg" title="glass of water" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/film/glass_flowers.jpg" title="glass of water with light shining through it" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    Left to right, top to bottom: Flowers in a window-frame, a plant silhouette on some rocks, tomatoes combined with some grass or something, and a glass with flowers in the backround.
+</div>
