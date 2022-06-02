@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kaes  Holkeboer | audacious corruptions</title>
+    <meta name="author" content="Kaes  Holkeboer" />
+    <meta name="description" content="corrupting image files using audio editing" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img//favicon_io/favicon.ico"/>
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://kaesholk.github.io/projects_photo/audacious_corruptions/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://kaesholk.github.io/"><span class="font-weight-bold">Kaes</span>   Holkeboer</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects_photo/">photography</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">audacious corruptions</h1>
+            <p class="post-description">corrupting image files using audio editing</p>
+          </header>
+
+          <article>
+            <p>Ever since I discovered you could import raw data into the audio editing program Audacity, I wondered if you could run a file through audio effects and re-export it as a viewable image file. After some googling, I landed on this process:</p>
+
+<ol>
+  <li>convert your image to .tif</li>
+  <li>open Audacity and go to file -&gt; import -&gt; raw data</li>
+  <li>select the image and set encoding to “U-Law” and byte order to little-endian</li>
+  <li>apply effects to the audio newly created track 
+(do not change the beginning/end of the audio or change the overall length because the file will be unopenable)</li>
+  <li>go to export -&gt; export audio</li>
+  <li>save as type “other uncompressed files”</li>
+  <li>set header to “RAW (header-less)” and encoding to “U-Law”</li>
+  <li>save as a new, artistically corrupted .tif file</li>
+</ol>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions/columns-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions/columns-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions/columns-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid z-depth-1" src="/assets/img/corruptions/columns.jpg" title="uncorrupted image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions/columnsreverse-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions/columnsreverse-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions/columnsreverse-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid z-depth-1" src="/assets/img/corruptions/columnsreverse.jpg" title="image with reverse effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions/columns_micro_shift2-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions/columns_micro_shift2-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions/columns_micro_shift2-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid z-depth-1" src="/assets/img/corruptions/columns_micro_shift2.jpg" title="pitch shifted image">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions/columns_eq_4-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions/columns_eq_4-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions/columns_eq_4-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid z-depth-1" src="/assets/img/corruptions/columns_eq_4.jpg" title="image with eq">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    From left to right: the original image, the same image with an echo effect, the image pitch shifted up by a very tiny amount, and the image with an EQ applied.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions/columns_wah_reallyslow-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions/columns_wah_reallyslow-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions/columns_wah_reallyslow-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions/columns_wah_reallyslow.jpg" title="image with wah-wah effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions/columnsecho-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions/columnsecho-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions/columnsecho-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions/columnsecho.jpg" title="image with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Left: the image with a wah-wah effect. Right: the image with the middle section reversed. Interestingly, reversing the audio inverts the colors while also flipping the image.
+</div>
+
+<p>After messing around with various effects on this test image, I tried corrupting some of my own photos.</p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-3 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/windows_echo_screenshot-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/windows_echo_screenshot-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/windows_echo_screenshot-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/windows_echo_screenshot.png" title="image of the side of a building with an echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    This photo looked fine in Microsoft Photos, but it turned almost completely red when I added it to the website, so I took a screenshot to duplicate it. Sometimes the corruption process can cause weird inexplicable things like that to happen.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/nib_echo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/nib_echo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/nib_echo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/nib_echo.jpg" title="image of a large building with an echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/grate_echo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/grate_echo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/grate_echo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/grate_echo.jpg" title="image of a hexagonal grate with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Changing the parameters of the echo effect can change the craziness of the image.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/door_echo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/door_echo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/door_echo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/door_echo.jpg" title="image of door with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/staircase_echo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/staircase_echo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/staircase_echo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/staircase_echo.jpg" title="image of staircase with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/staircase_rev-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/staircase_rev-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/staircase_rev-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/staircase_rev.jpg" title="image of staircase with reverse effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/hallway_echo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/hallway_echo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/hallway_echo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/hallway_echo.jpg" title="image of dark hallway with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/sign_echo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/sign_echo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/sign_echo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/sign_echo.jpg" title="image of sign with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/sign_echo2-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/sign_echo2-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/sign_echo2-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/sign_echo2.jpg" title="another image of a sign with echo effect">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/sign_pitch-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/sign_pitch-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/sign_pitch-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/sign_pitch.jpg" title="image of sign with pitch shift">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/corruptions2/sign_pitch2-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/corruptions2/sign_pitch2-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/corruptions2/sign_pitch2-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid  z-depth-1" src="/assets/img/corruptions2/sign_pitch2.jpg" title="image of sign with pitch shift">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Sometimes, you can get different output images even with the exact settings. Some images also look different depending on what photo viewer you're using. I have no idea why these phenomena occur.
+</div>
+
+          </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2022 Kaes  Holkeboer. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  </body>
+</html>
+
